@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D3828"
+    tools:context=".main.activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC300">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:text="@string/home"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoadingMain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:indeterminateTint="#FFC300"/>
+
+    <TextView
+        android:id="@+id/textViewLoadingMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/progressBarLoadingMain"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#FFC300"
+        android:text="@string/loading"/>
+
+    <Button
+        android:id="@+id/buttonAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/try_again"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:background="#FFC300"
+        android:padding="8dp"
+        android:visibility="invisible"
+        android:onClick="onButtonAgainClick"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMain"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarMain"
+        tools:listitem="@layout/recycler_view_item_main"/>
+
+</RelativeLayout>

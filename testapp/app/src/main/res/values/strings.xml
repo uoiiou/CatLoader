@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="ic_favorite">Favorite</string>
+    <string name="loading">Loading ...</string>
+    <string name="home">HOME</string>
+    <string name="text_favorite">FAVORITE</string>
+    <string name="toast_added_to_favorite">Added to favorite</string>
+    <string name="toast_downloading">Downloading ...</string>
+    <string name="try_again">Try again ...</string>
+    <string name="empty_list_of_favorites">Empty list of favorites</string>
+    <string name="delete">Delete</string>
+</resources>
